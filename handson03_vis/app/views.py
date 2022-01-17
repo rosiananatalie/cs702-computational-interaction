@@ -54,3 +54,8 @@ def reports():
     }
     """)
     return data
+
+
+@app.route('/datgui')
+def datgui():
+    return render_template('datgui.html')

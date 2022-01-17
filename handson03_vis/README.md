@@ -1,12 +1,24 @@
-# Hands-on #01 - Web Application
+# Hands-on #03 - Information Visualization with `p5.js`
 Run:
 ```shell
 docker build -t flaskapp . 
 docker run -p 5000:80 --volume=${pwd}:/app flaskapp
 ```
-And access [localhost:5000](http://localhost:5000) and [localhost:5000/template](http://localhost:5000/template).
+And access [localhost:5000](http://localhost:5000). 
+(Commands may differ slightly for Windows machines)
+
+Alternatively, you can run the following lines of command:
+```shell
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+flask run
+```
+This will start running the application on a Flask development server.
+(Commands may differ slightly for Windows computers)
+
+
 
 # References
-* [Get Docker](https://docs.docker.com/get-docker/)
-* [How to Build and Deploy a Flask Application Using Docker on Ubuntu 20.04](https://www.digitalocean.com/community/tutorials/how-to-build-and-deploy-a-flask-application-using-docker-on-ubuntu-20-04)
-* [Your first form](https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form)
+- [p5.js overview](https://github.com/processing/p5.js/wiki/p5.js-overview)
+- [p5.js preload](https://github.com/processing/p5.js/wiki/Loading-external-files:-AJAX,-XML,-JSON#preload)

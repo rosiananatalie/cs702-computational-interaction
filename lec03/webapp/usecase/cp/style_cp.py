@@ -21,7 +21,7 @@ class StyleCP(object):
 
     def add_h1_size_constraint(self, h1_size_min=12, h1_size_max=32):
         self.problem.addConstraint(
-            lambda h1_r: h1_size_min <= h1_r <= h1_size_max,
+            lambda h1_size: h1_size_min <= h1_size <= h1_size_max,
             ['h1-size'])
 
 
